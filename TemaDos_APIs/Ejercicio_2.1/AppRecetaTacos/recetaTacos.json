@@ -1,0 +1,109 @@
+[
+  {
+    "id": "0001",
+    "tipo": "taco",
+    "nombre": "Taco de lechon",
+    "precio": 20.00,
+    "ingredientes": {
+      "proteina": {
+        "nombre": "Puerco",
+        "preparacion": "Horneado"
+      },
+      "salsa": {
+        "nombre": "Tomate verde",
+        "picor": "Medio"
+      }
+    },
+    "acompañamientos": [
+      {
+        "nombre": "Cebolla",
+        "cantidad": "1 cucharada",
+        "ingredientes": ["Cebolla blanca", "Cilantro", "Naranja", "Sal"]
+      },
+      {
+        "nombre": "Guacamole",
+        "cantidad": "2 cucharadas",
+        "ingredientes": ["Aguacate", "Jugo de limon", "Sal", "Cebolla", "Cilantro"]
+      }
+    ]
+  },
+  {
+    "id": "0002",
+    "tipo": "taco",
+    "nombre": "Taco de cochinita pibil",
+    "precio": 18.00,
+    "ingredientes": {
+      "proteina": {
+        "nombre": "Puerco",
+        "preparacion": "Cocido en achiote"
+      },
+      "salsa": {
+        "nombre": "Habanero",
+        "picor": "Alto"
+      }
+    },
+    "acompañamientos": [
+      {
+        "nombre": "Cebolla morada",
+        "cantidad": "1 cucharada",
+        "ingredientes": ["Cebolla morada", "Naranja agria", "Sal"]
+      }
+    ]
+  },
+  {
+    "id": "0003",
+    "tipo": "taco",
+    "nombre": "Taco de pollo asado",
+    "precio": 15.00,
+    "ingredientes": {
+      "proteina": {
+        "nombre": "Pollo",
+        "preparacion": "Asado"
+      },
+      "salsa": {
+        "nombre": "Roja",
+        "picor": "Medio"
+      }
+    },
+    "acompañamientos": [
+      {
+        "nombre": "Ensalada",
+        "cantidad": "1 porcion",
+        "ingredientes": ["Lechuga", "Tomate", "Pepino"]
+      },
+      {
+        "nombre": "Crema",
+        "cantidad": "1 cucharada",
+        "ingredientes": ["Crema", "Sal"]
+      }
+    ]
+  },
+  {
+    "id": "0004",
+    "tipo": "taco",
+    "nombre": "Taco de pescado",
+    "precio": 22.00,
+    "ingredientes": {
+      "proteina": {
+        "nombre": "Pescado",
+        "preparacion": "Empanizado"
+      },
+      "salsa": {
+        "nombre": "Chipotle",
+        "picor": "Medio"
+      }
+    },
+    "acompañamientos": [
+      {
+        "nombre": "Col",
+        "cantidad": "1 porcion",
+        "ingredientes": ["Col", "Zanahoria", "Mayonesa"]
+      },
+      {
+        "nombre": "Limon",
+        "cantidad": "1 pieza",
+        "ingredientes": ["Jugo de limon"]
+      }
+    ]
+  }
+]

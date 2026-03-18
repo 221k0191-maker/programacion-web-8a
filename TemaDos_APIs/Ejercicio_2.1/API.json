@@ -1,0 +1,27 @@
+{
+    "ip": "45.235.255.93",
+    "isp": {
+        "asn": "AS265550",
+        "org": "BUENAS NOTICIAS SA DE CV",
+        "isp": "Buenas Noticias SA De CV"
+    },
+    "location": {
+        "country": "Mexico",
+        "country_code": "MX",
+        "city": "Felipe Carrillo Puerto",
+        "state": "Quintana Roo",
+        "zipcode": "",
+        "latitude": 19.568396947109242,
+        "longitude": -88.03101954309709,
+        "timezone": "America/Cancun",
+        "localtime": "2026-03-18T15:23:55"
+    },
+    "risk": {
+        "is_mobile": false,
+        "is_vpn": false,
+        "is_tor": false,
+        "is_proxy": false,
+        "is_datacenter": false,
+        "risk_score": 0
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TacosMx</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<h1>Tacoschidos 🌮</h1>
+
+<form id="Form" class="buttons">
+    <button type="button" data-type="Cerdo">🐷</button>
+    <button type="button" data-type="Pollo">🐔</button>
+    <button type="button" data-type="pescado"> 🐟 </button>
+    <button type="button" data-type="Res">🐮</button>
+</form>
+
+<div id="Container"></div>
+
+ <script>
+    const botones = document.querySelectorAll("button");
+    const container = document.getElementById("Container");
+
+    botones.forEach(boton => {
+      boton.addEventListener("click", () => {
+        const tipo = boton.getAttribute("data-type");
+
+        fetch(`/receta/${tipo}`)
+          .then(response => response.json())
+          .then(data => {
+
+            if (data.error) {
+              container.innerHTML = "<p>No se encontró la receta</p>";
+              return;
+            }
+
+            container.innerHTML = `
+              <div class="card">
+                <h2>${data.nombre}</h2>
+                <p><strong>Precio:</strong> $${data.precio}</p>
+                <p><strong>Proteína:</strong> ${data.ingredientes.proteina.nombre}</p>
+
+                <h3>Acompañamientos:</h3>
+                <ul>
+                  ${data.acompañamientos.map(a => `
+                    <li>${a.nombre} - ${a.ingredientes.join(", ")}</li>
+                  `).join("")}
+                </ul>
+              </div>
+            `;
+          });
+      });
+    });
+  </script>
+
+</body>
+</html>
