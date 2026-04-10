@@ -1,9 +1,14 @@
 import axios from "axios";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const obtenerDatos = async () => {
   try {
 
-    const token = "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";
+    const token = process.env.TOKEN;
+
+    console.log("Token:", token);
 
     const datos = await axios.get(
       "https://api.github.com/user",
