@@ -1,0 +1,16 @@
+{
+  "name": "4.1-pruebas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "funciones.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Alejandra",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
